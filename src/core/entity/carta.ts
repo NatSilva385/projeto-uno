@@ -57,7 +57,22 @@ class Carta{
     /**
      * Se possível, joga a carta
      */
-    
+    public jogarCarta(cartaAnterior: Carta): AÇÃO|null
+    {
+        if (this.verificarCarta(cartaAnterior) == false)
+        {
+            return null;
+        }
+        switch (this._cartaValor)
+        {
+            case VALOR_CARTA.BLOQUEAR:
+                return AÇÃO.BLOQUEAR;
+            case VALOR_CARTA.INVERTER:
+                return AÇÃO.INVERTER;
+            
+            
+        }
+    }
 }
 
 /**
