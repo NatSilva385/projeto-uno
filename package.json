@@ -11,6 +11,9 @@
     "Samuel do Amaral Pimentel"
   ],
   "license": "MIT",
+  "repository": {
+    "url": "https://github.com/NathaliaQuetsia/projeto-uno.git"
+  },
   "devDependencies": {
     "typescript": "^4.0.3"
   }
