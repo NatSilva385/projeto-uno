@@ -53,7 +53,11 @@ class Carta{
         return false;
 
     }
-
+    
+    /**
+     * Se possível, joga a carta
+     */
+    
 }
 
 /**
@@ -86,5 +90,36 @@ enum VALOR_CARTA
     INVERTER,
     COMPRA_DOIS,
     CORINGA,
+    CORINGA_COMPRA_QUATRO
+}
+
+/**
+ * Representa uma ação que a carta está pedindo para ser realizada😃
+ */
+enum AÇÃO 
+{
+    /**
+     * Significa que não é necessária nenhuma ação especial
+     */
+    NORMAL,
+    /**
+     * Pula a vez do próximo jogador
+     */
+    BLOQUEAR,
+    /**
+     * Inverte a ordem que a partida é jogada
+     */
+    INVERTER,
+    /**
+     * O proximo jogador tem que comprar duas cartas
+     */
+    COMPRA_DOIS,
+    /**
+     * Muda a cor que está em jogo
+     */
+    CORINGA,
+    /**
+     * Muda a cor que está em jogo e o próximo jogador compra mais quatro cartas
+     */
     CORINGA_COMPRA_QUATRO
 }
